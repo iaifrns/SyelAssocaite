@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 const TopBar = () => {
   return (
-    <div className="w-full flex justify-between">
+    <div className="w-full flex justify-between max-md:hidden">
       <div className="flex gap-6">
         <div className="topbar-container">
           <Icon icon="mdi:phone" className="topbar-icon" />
