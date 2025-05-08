@@ -11,11 +11,9 @@ export const CarouselNext = () => {
     <div className="w-fit h-fit">
       <Icon
         icon="oui:arrow-right"
-        width="48"
-        height="48"
         className={`${
           canScrollNext ? "text-white" : "text-gray-400"
-        } cursor-pointer`}
+        } cursor-pointer text-[48px] max-md:text-[32px]`}
         onClick={() => {
           if (canScrollNext) {
             setIndex(index + 1);
@@ -35,11 +33,9 @@ export const CarouselPrev = () => {
     <div className="w-fit h-fit">
       <Icon
         icon="oui:arrow-left"
-        width="48"
-        height="48"
         className={`${
           canScrollPrev ? "text-white" : "text-gray-400"
-        } cursor-pointer`}
+        } cursor-pointer text-[48px] max-md:text-[32px]`}
         onClick={() => {
           if (canScrollPrev) {
             setIndex(index - 1);
