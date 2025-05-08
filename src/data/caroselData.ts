@@ -9,12 +9,12 @@ export const caroselData: CaroselType[] = [
   },
   {
     image: images.finance.FINANCE1,
-    title: "Professional Law Firm",
+    title: "Finance Firm",
     desc: "we are a leading law firm in financial & business industry. With more than 20 years of experience",
   },
   {
     image: images.transport.TRANSPORT1,
-    title: "Professional Law Firm",
+    title: "Transportation Enterprise",
     desc: "we are a leading law firm in financial & business industry. With more than 20 years of experience",
   },
 ];

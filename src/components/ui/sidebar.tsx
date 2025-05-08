@@ -22,6 +22,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { Icon } from "@iconify/react/dist/iconify.js"
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7
@@ -266,12 +267,18 @@ function SidebarTrigger({
       size="icon"
       className={cn("size-7", className)}
       onClick={(event) => {
+        console.log(event)
         onClick?.(event)
         toggleSidebar()
       }}
       {...props}
     >
-      <PanelLeftIcon />
+      <Icon
+          icon="uiw:menu-fold"
+          width="24"
+          height="24"
+          className="text-white"
+        />
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   )

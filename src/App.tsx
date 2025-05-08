@@ -2,10 +2,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./home";
 import { Layout } from "./layout/Layout";
 import ErrorBoundary from "./common/ErrorBoundary";
+import GeneralProvider from "./context/GeneralProvider";
 
 function App() {
   return (
-    <div>
+    <GeneralProvider>
       <BrowserRouter>
         <Routes>
           <Route
@@ -20,7 +21,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </div>
+    </GeneralProvider>
   );
 }
 
