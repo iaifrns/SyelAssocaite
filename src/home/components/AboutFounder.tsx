@@ -17,7 +17,7 @@ const AboutFounder = () => {
           <p className="text-2xl font-tangerine font-bold text-white">
             Peter DRUCKER
           </p>
-          <p className="text-yellow-600 font-poppins text-sm">
+          <p className="text-main-text font-poppins text-sm">
             CEO, Syel Advisory
           </p>
         </div>

@@ -7,8 +7,11 @@ export const useCalculateScreenSize = () => {
     const handleResizeScreen = () => {
         let s = window.innerHeight;
         let n = window.innerWidth;
+        console.log(n)
       if (n < 770) {
         setSizeY(500);
+      } else if(n<1030) {
+        setSizeY(1100)
       } else {
         if (s < 750) {
           setSizeY(window.innerHeight + 320);

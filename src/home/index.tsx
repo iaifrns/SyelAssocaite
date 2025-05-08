@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import TopBar from "./components/TopBar";
 import AboutFounder from "./components/AboutFounder";
 import { useCalculateScreenSize } from "@/hooks/useCalculateScreenSize";
+import Expertise from "./components/Expertise";
 
 const HomePage = () => {
   const {sizeY} = useCalculateScreenSize()
@@ -16,6 +17,7 @@ const HomePage = () => {
           <Header />
           <AboutFounder />
         </div>
+        <Expertise />
       </div>
     </SidebarProvider>
   );
