@@ -9,6 +9,11 @@ import FINANCE2 from "../assets/home/finance2.jpg";
 import FINANCE3 from "../assets/home/finance3.jpg";
 import LOGO from "../assets/syellogo.png";
 import LOGO1 from "../assets/syellogo1.png";
+import PERSON1 from "../assets/collegs/person5.jpg";
+import PERSON2 from "../assets/collegs/person4.png";
+import PERSON3 from "../assets/collegs/person3.png";
+import PERSON4 from "../assets/collegs/person2.png";
+import PERSON5 from "../assets/collegs/person1.png";
 
 const lawImg = {
   LAW1,
@@ -28,10 +33,19 @@ const finance = {
   FINANCE3,
 };
 
+const person = {
+  PERSON1,
+  PERSON2,
+  PERSON3,
+  PERSON4,
+  PERSON5,
+}
+
 export const images = {
   finance,
   transport,
   lawImg,
   LOGO,
   LOGO1,
+  person
 };

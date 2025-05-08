@@ -1,0 +1,20 @@
+import { CarouselSpacing } from "@/components/CarouselSpacing";
+import { Icon } from "@iconify/react/dist/iconify.js";
+
+const PartnersSection = () => {
+    return (
+        <div className='component-container py-16 bg-gray-200 flex-col items-center gap-8'>
+            <div className='flex flex-col items-center'>
+                <p className="text-[32px] font-bold font-playfair">Partners at Syle Advisory</p>
+                <button className="cursor-pointer p-4 mb-2 flex gap-2 text-gray-500 items-center">
+                    <p className="font-bold">View All People</p>
+                    <Icon icon="stash:arrow-right" width="24" height="24" />
+                </button>
+                <div className="h-[4px] rounded-lg w-[60px] bg-black"></div>
+            </div>
+            <CarouselSpacing/>
+        </div>
+    );
+}
+
+export default PartnersSection;
