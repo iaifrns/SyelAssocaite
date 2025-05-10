@@ -5,6 +5,7 @@ import AboutFounder from "./components/AboutFounder";
 import { useCalculateScreenSize } from "@/hooks/useCalculateScreenSize";
 import Expertise from "./components/Expertise";
 import PartnersSection from "./components/PartnersSection";
+import ClientReviewAndContact from "./components/ClientReviewAndContact";
 
 const HomePage = () => {
   const { sizeY } = useCalculateScreenSize();
@@ -23,6 +24,7 @@ const HomePage = () => {
         </div>
         <Expertise />
         <PartnersSection />
+        <ClientReviewAndContact />
       </div>
     </SidebarProvider>
   );
