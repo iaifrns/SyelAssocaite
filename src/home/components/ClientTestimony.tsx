@@ -16,13 +16,14 @@ const ClientTestimony = () => {
               className="text-white text-[75px] max-md:text-[40px]"
             />
             <p className="text-white font-playfair font-semibold text-[38px] max-md:text-2xl">
-              Reviews From Our Clients
+              Avis de nos clients
             </p>
-            <p className="text-center text-gray-300 font-poppins w-full md:w-[60%] text-xl max-md:text-sm">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookm arksgrove right at the coast of the Semantics,
-              a large language ocean. A small river named
+            <p className="text-center text-gray-300 font-poppins w-full md:w-[70%] text-xl max-md:text-sm">
+              Loin de tout stress juridique, au-delà des frontières de
+              l’incompréhension, j’ai trouvé chez SYEL ADVISORY une équipe
+              attentive, rigoureuse et profondément humaine. Grâce à leur
+              accompagnement, chaque étape de mon projet a pris tout son sens.
+              Une véritable oasis de clarté dans l’océan complexe du droit.
             </p>
           </div>
           <div className="w-full flex max-md:flex-col max-md:gap-6 justify-between items-center mt-8">
