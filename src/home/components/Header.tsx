@@ -79,12 +79,12 @@ const Header = () => {
               <CarouselPrev />
               <div className="component-container flex-col gap-12 max-md:gap-6 mt-6 h-full max-md:items-center max-md:justify-center max-md:mt-0">
                 <div className="flex flex-col gap-4 max-md:items-center">
-                  <p className="text-[68px] max-md:text-center max-md:w-[80%] max-md:text-[32px] transition-all duration-300 ease-in-out text-white font-playfair font-bold">
+                  <p className="text-[52px] max-md:text-center max-md:w-full max-md:text-[32px] transition-all duration-300 ease-in-out text-white font-playfair font-bold">
                     {caroselData[index].title}
                   </p>
                   <div className="w-[80px] h-[6px] max-md:w-[50px] max-md:h-[4px] rounded-full bg-white"></div>
                 </div>
-                <p className="text-xl font-poppins text-white max-md:w-[80%] max-md:text-sm max-md:text-center w-[50%]">
+                <p className="font-poppins text-white max-md:w-[80%] max-md:text-sm max-md:text-center w-[60%]">
                   {caroselData[index].desc}
                 </p>
                 <button className="p-4 bg-white text-primary flex gap-2 w-fit rounded-md items-center">

@@ -17,7 +17,7 @@
 }
 
 .blur-bg {
-  background-color: rgba(61, 62, 107, 0.6);
+  background-color: rgba(2, 57, 129, 0.4);
 }
 
 .component-container {
@@ -103,7 +103,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: #3c3e6b;
+  --primary: rgb(6, 62, 136);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: #4c51a0;
   --secondary-foreground: oklch(0.205 0 0);
@@ -145,7 +145,7 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: #3c3e6b;
+  --primary: #023981;
   --primary-foreground: oklch(0.205 0 0);
   --secondary: #4c51a0;
   --secondary-foreground: oklch(0.985 0 0);
