@@ -16,7 +16,7 @@ const HomePage = () => {
         </div>
         <div
           className="relative flex items-center flex-col"
-          style={{ height: `${sizeY}px` }}
+          style={{ height: sizeY ? `${sizeY}px` : '100%' }}
         >
           <Header />
           <AboutFounder />

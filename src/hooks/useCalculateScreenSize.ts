@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const useCalculateScreenSize = () => {
-  const [sizeY, setSizeY] = useState(0);
+  const [sizeY, setSizeY] = useState<number|null>(0);
 
   useEffect(() => {
     const handleResizeScreen = () => {
@@ -9,7 +9,7 @@ export const useCalculateScreenSize = () => {
         let n = window.innerWidth;
         console.log(n)
       if (n < 770) {
-        setSizeY(500);
+        setSizeY(null);
       } else if(n<1030) {
         setSizeY(1100)
       } else {

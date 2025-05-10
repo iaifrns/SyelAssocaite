@@ -11,7 +11,7 @@ export function Layout() {
       <div
         className={`${
           openSidebar ? "opacity-100" : "opacity-0 pointer-events-none"
-        } absolute z-20 h-full w-full blur-bg flex justify-end md:hidden transition-all duration-200 ease-in-out`}
+        } absolute z-20 h-full w-full blur-bg flex justify-end md:hidden transition-all duration-200 ease-in-out overflow-hidden`}
       >
         <div
           className={`${
