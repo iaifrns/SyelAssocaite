@@ -15,7 +15,10 @@ const CarouselActivities = () => {
     <Carousel className="w-full">
       <CarouselContent className="-ml-1">
         {activities.map((item, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/6">
+          <CarouselItem
+            key={index}
+            className="md:basis-1/2 lg:basis-1/6 items-center justify-center max-md:flex"
+          >
             <div
               className="px-4 py-8 hover:bg-primary flex flex-col justify-center items-center gap-4 w-[90%] shadow-2xl rounded-md border border-gray-300 hover:scale-110 transition-all duration-300 ease-out"
               onMouseEnter={() => setIsHovered(index)}
