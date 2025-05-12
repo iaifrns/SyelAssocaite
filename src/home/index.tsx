@@ -8,6 +8,7 @@ import PartnersSection from "./components/PartnersSection";
 import ClientReviewAndContact from "./components/ClientReviewAndContact";
 import ActivitySectors from "./components/ActivitySectors";
 import Whyus from "./components/Whyus";
+import ContactDetail from "./components/ContactDetail";
 
 const HomePage = () => {
   const { sizeY } = useCalculateScreenSize();
@@ -29,6 +30,7 @@ const HomePage = () => {
         <ClientReviewAndContact />
         <ActivitySectors />
         <Whyus />
+        <ContactDetail />
       </div>
     </SidebarProvider>
   );
