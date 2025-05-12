@@ -1,5 +1,5 @@
 const generalInfo = {
-    phone: '+1-2345-2345-54',
+    phone: '(+237) 620 30 79 38',
     email: 'Contact@SyelAssociate.com',
     openings: 'Mon-Fri 09:00-17:00'
 }
