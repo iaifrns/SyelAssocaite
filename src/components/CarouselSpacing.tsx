@@ -49,7 +49,7 @@ export function CarouselSpacing() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className=" md:block">
+      <div className="relative w-full mt-4 flex justify-center items-center">
         <CarouselPrevious />
         <CarouselNext />
       </div>

@@ -24,7 +24,7 @@ const ClientReviewAndContact = () => {
           />
         </Parallax>
       </div>
-      <div className="md:absolute w-full md:h-full md:z-10 md:top-0 flex flex-col md:justify-end items-center border border-black">
+      <div className="md:absolute w-full md:h-full md:z-10 md:top-0 flex flex-col md:justify-end items-center">
         <div className="md:mb-[150px] bg-white py-8 md:px-8 md:py-16 md:w-[55%] w-[90%] flex flex-col gap-8 rounded-md items-center">
           <p className="text-[32px] font-playfair font-bold">
             Free Consultation
