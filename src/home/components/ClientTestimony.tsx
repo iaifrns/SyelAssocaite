@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 const ClientTestimony = () => {
   return (
     <div
-      className="md:h-[130vh] w-full bg-cover"
+      className="md:h-[130vh] 2xl:h-[100vh] max-md:h-fit w-full bg-cover z-0 relative"
       style={{ backgroundImage: `url(${images.lawImg.LAW1})` }}
     >
       <div className="w-full h-full blur-bg flex items-center justify-center">

@@ -2,6 +2,7 @@ import LAW1 from "../assets/home/law1.jpg";
 import LAW2 from "../assets/home/law2.jpg";
 import LAW3 from "../assets/home/law3.jpg";
 import LAW4 from "../assets/home/law4.jpg";
+import LAW5 from "../assets/home/law5.jpg";
 import TRANSPORT1 from "../assets/home/transport1.jpg";
 import TRANSPORT2 from "../assets/home/transport2.jpg";
 import FINANCE1 from "../assets/home/finance1.jpg";
@@ -20,6 +21,7 @@ const lawImg = {
   LAW2,
   LAW3,
   LAW4,
+  LAW5,
 };
 
 const transport = {
