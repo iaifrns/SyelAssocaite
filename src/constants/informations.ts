@@ -1,7 +1,8 @@
 const generalInfo = {
     phone: '(+237) 620 30 79 38',
     email: 'Contact@SyelAssociate.com',
-    openings: 'Mon-Fri 09:00-17:00'
+    openings: 'Mon-Fri 09:00-17:00',
+    company: 'SYEL Advisory'
 }
 
 const commonInfo = {

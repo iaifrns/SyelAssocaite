@@ -1,19 +1,19 @@
 const enterpriseState:{stat: string, label:string}[] = [
     {
         stat: "1000+",
-        label: "Client Consultations"
+        label: "Consultations clients"
     },
     {
         stat: "95%",
-        label: "Successful Cases"
+        label: "Affaires réussies"
     },
     {
         stat: "10mlns",
-        label: "Recovered cost for clients"
+        label: "Coûts récupérés pour les clients"
     },
     {
         stat: "30+",
-        label: "Professional Attorneys"
+        label: "Avocats professionnels"
     },
 ]
 

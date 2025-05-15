@@ -47,7 +47,7 @@ const CarouselActivities = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className="relative w-full p-12 flex justify-center items-center">
+      <div className="relative w-full p-12 flex justify-center items-center gap-8">
         <CarouselPrevious />
         <CarouselNext />
       </div>

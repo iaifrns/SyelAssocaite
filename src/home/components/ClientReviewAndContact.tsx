@@ -1,8 +1,14 @@
 import { images } from "@/constants/images";
 import ClientTestimony from "./ClientTestimony";
 import { Parallax } from "react-scroll-parallax";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CustomInput from "@/components/CustomInput";
+
+const smallDesc = [
+  "Le droit est un domaine complexe. L’ignorer peut avoir de lourdes conséquences. Chez SYEL ADVISORY, nous sommes là pour vous conseiller et vous protéger.",
+  "Une mauvaise gestion financière peut freiner la croissance de votre entreprise. Confiez votre stratégie à nos experts pour optimiser vos décisions.",
+  "Une chaîne d’approvisionnement mal maîtrisée peut coûter cher. Nos consultants vous accompagnent pour fluidifier vos opérations et booster votre efficacité logistique.",
+];
 
 const ClientReviewAndContact = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +18,21 @@ const ClientReviewAndContact = () => {
     lawType: "",
     message: "",
   });
+
+  const [textSlide, setTextSlide] = useState(0);
+
+  useEffect(() => {
+    const time = setInterval(() => {
+      let i = textSlide + 1;
+      if (i < 3) {
+        setTextSlide(i);
+      } else {
+        setTextSlide(0);
+      }
+    }, 4000);
+    return () => clearInterval(time);
+  }, [textSlide]);
+
   return (
     <div className="w-full h-full relative">
       <ClientTestimony />
@@ -25,14 +46,22 @@ const ClientReviewAndContact = () => {
         </Parallax>
       </div>
       <div className="md:absolute w-full md:h-full md:z-10 md:top-0 flex flex-col md:justify-end items-center">
-        <div className="md:mb-[150px] bg-white py-8 md:px-8 md:py-16 md:w-[55%] w-[90%] flex flex-col gap-8 rounded-md items-center">
-          <p className="text-[32px] font-playfair font-bold">
-            Free Consultation
-          </p>
-          <p className="text-gray-400 font-poppins text-center text-lg md:w-[70%] max-md:text-sm">
-            Law is complicate matter. It can cause you a big problem if you
-            ignore it. Let us help you!
-          </p>
+        <div className="md:mb-[70px] 2xl:mb-[150px] bg-white py-8 md:px-8 md:py-16 md:w-[55%] w-[90%] flex flex-col gap-8 rounded-md items-center">
+          <div className="flex flex-col gap-3 items-center">
+            <p className="text-[32px] font-playfair font-bold">
+              Consultation Gratuite
+            </p>
+            {smallDesc.map((text, ind) => (
+              <p
+                className={`text-gray-400 font-poppins text-justify text-[14px] text-balance w-[90%] max-md:text-xs text-sm transition-all duration-500 ease-in-out h-[70px] ${
+                  ind == textSlide ? "opacity-100" : "opacity-0 hidden"
+                }`}
+                key={"small-desc-" + ind}
+              >
+                {text}
+              </p>
+            ))}
+          </div>
           <div className="flex max-md:flex-col w-full justify-between gap-8">
             <CustomInput
               placeholder="Nom"
@@ -50,13 +79,17 @@ const ClientReviewAndContact = () => {
             />
           </div>
           <div className="flex max-md:flex-col w-full justify-between gap-8">
-            <CustomInput
-              placeholder="Law"
-              value={formData.lawType}
-              onChange={(e) =>
-                setFormData({ ...formData, lawType: e.target.value })
-              }
-            />
+            <select
+              name=""
+              id=""
+              className="p-4 focus:outline-none bg-[rgba(230,230,230)] w-full font-poppins"
+            >
+              <option value="Conseil Juridique">Conseil Juridique</option>
+              <option value="Conseil en Finance d’Entreprise">
+                Conseil en Finance d’Entreprise
+              </option>
+              <option value="Conseil Supply Chain">Conseil Supply Chain</option>
+            </select>
             <CustomInput
               placeholder="Email"
               value={formData.email}
@@ -66,17 +99,17 @@ const ClientReviewAndContact = () => {
             />
           </div>
           <textarea
-              name=""
-              id=""
-              placeholder={'Message'}
-              className="w-full h-[180px] bg-[rgba(230,230,230)] font-poppins p-4 focus:outline-none"
-              value={formData.message}
-              onChange={(e) =>
-                setFormData({ ...formData, message: e.target.value })
-              }
-            />
+            name=""
+            id=""
+            placeholder={"Message"}
+            className="w-full h-[180px] bg-[rgba(230,230,230)] font-poppins p-4 focus:outline-none"
+            value={formData.message}
+            onChange={(e) =>
+              setFormData({ ...formData, message: e.target.value })
+            }
+          />
           <button className="w-full p-4 bg-primary text-white font-bold font-poppins">
-            Submit Now
+            Envoyer
           </button>
         </div>
       </div>

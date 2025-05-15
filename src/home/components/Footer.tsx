@@ -36,11 +36,13 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-4 w-full">
           <p className="text-2xl text-white font-bold font-playfair">
-            Contact Info
+            Secteurs D’Activité
           </p>
           <div className="grid grid-cols-2">
             {activities.map((item, ind) => (
-              <p key={ind} className="text-blue-500 font-poppins">{item.text}</p>
+              <p key={ind} className="text-blue-500 font-poppins">
+                {item.text}
+              </p>
             ))}
           </div>
         </div>

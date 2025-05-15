@@ -75,7 +75,7 @@ const Header = () => {
               </div>
             </div>
             <TopBarMenu active={Menu.HOME} />
-            <div className="justify-between flex w-full items-center max-md:h-full ">
+            <div className="justify-between flex w-full items-center max-md:h-full 2xl:mt-8">
               <CarouselPrev />
               <div className="component-container flex-col gap-12 max-md:gap-6 mt-6 h-full max-md:items-center max-md:justify-center max-md:mt-0">
                 <div className="flex flex-col gap-4 max-md:items-center">

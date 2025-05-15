@@ -1,10 +1,11 @@
 import { images } from "@/constants/images";
+import { generalInfo } from "@/constants/informations";
 
 const AboutFounder = () => {
   return (
     <div className="component-container bg-primary rounded-lg shadow-lg md:absolute md:z-20 bottom-0 max-md:pointer-events-none max-md:mt-8">
       <div className="md:p-16 p-4 flex-1 flex flex-col gap-8">
-        <p className="text-white text-3xl font-playfair max-md:text-xl">About Syel Advisory</p>
+        <p className="text-white text-3xl font-playfair max-md:text-xl">À Propos de {generalInfo.company}</p>
         <p className="text-gray-300 font-poppins text-sm">
           SYEL ADVISORY propose une vision stratégique de l’entrepreneuriat en
           Afrique subsaharienne, axée sur le développement de réseaux

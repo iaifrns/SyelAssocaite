@@ -8,17 +8,17 @@ const expertises: ExpertiseType[] = [
     link: "",
   },
   {
-    icon: "carbon:scis-transparent-supply",
-    title: "Supply Chain",
-    desc: "Nous optimisons la chaîne d’approvisionnement, de la stratégie d’achat à la gestion d’entrepôt, en passant par la production et la performance économique.",
-    link: ""
-  },
-  {
     icon: "carbon:finance",
     title: "Finance d'entreprise",
     desc: "Nous accompagnons les entreprises en finance d’entreprise, à travers le contrôle de gestion, l’audit interne et le conseil stratégique.",
-    link: ""
-  }
+    link: "",
+  },
+  {
+    icon: "carbon:scis-transparent-supply",
+    title: "Supply Chain",
+    desc: "Nous optimisons la chaîne d’approvisionnement, de la stratégie d’achat à la gestion d’entrepôt, en passant par la production et la performance économique.",
+    link: "",
+  },
 ];
 
-export {expertises}
+export { expertises };

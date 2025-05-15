@@ -21,7 +21,7 @@ const Expertise = ({
     >
       <Icon icon={icon} className="text-main-text text-[48px]" />
       <p className={`text-2xl font-bold font-playfair ${secondColor && 'text-white'}`}>{title}</p>
-      <p className="text-gray-500 text-center font-poppins text-[16px]">
+      <p className="text-gray-500 text-center font-poppins text-[16px] text-balance">
         {desc}
       </p>
       <button

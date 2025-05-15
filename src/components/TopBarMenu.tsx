@@ -1,3 +1,4 @@
+import { generalInfo } from "@/constants/informations";
 import { menuList } from "@/constants/menu";
 import { GeneralContext } from "@/context/GeneralProvider";
 import { Icon } from "@iconify/react/dist/iconify.js";
@@ -8,7 +9,7 @@ const TopBarMenu = ({ active }: { active: string }) => {
   return (
     <div className="bg-primary w-full py-4 px-8 flex justify-between items-center 2xl:w-[80%] md:w-[90%]">
       <p className="md:text-2xl text-xl font-semibold font-playfair text-white cursor-pointer">
-        Syel Adivsory
+        {generalInfo.company}
       </p>
       <div className="flex gap-6 items-center max-md:hidden">
         {menuList.map((text, ind) => (

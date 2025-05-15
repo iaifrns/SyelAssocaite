@@ -8,10 +8,10 @@ const ExpertiseSection = () => {
     <div className="component-container flex-col gap-8 py-16">
       <div className="w-full flex flex-col gap-2 items-center">
         <p className="text-xl font-semibold text-gray-400 font-poppins">
-          What we are expert at
+        Notre expertise au 
         </p>
         <p className="text-[32px] font-bold font-playfair">
-          Legal Practices Area
+        Sein Du Cabinet
         </p>
         <div className="h-[4px] rounded-lg w-[70px] bg-main-text"></div>
       </div>
