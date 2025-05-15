@@ -53,7 +53,7 @@ const ClientReviewAndContact = () => {
             </p>
             {smallDesc.map((text, ind) => (
               <p
-                className={`text-gray-400 font-poppins text-justify text-[14px] text-balance w-[90%] max-md:text-xs text-sm transition-all duration-500 ease-in-out h-[70px] ${
+                className={`text-gray-400 font-poppins text-justify text-[14px] text-balance w-[90%] 2xl:w-[80%] md:text-center max-md:text-xs text-sm transition-all duration-500 ease-in-out h-[70px] ${
                   ind == textSlide ? "opacity-100" : "opacity-0 hidden"
                 }`}
                 key={"small-desc-" + ind}

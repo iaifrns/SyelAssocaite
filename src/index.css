@@ -23,6 +23,7 @@
 .component-container {
   display: flex;
   width: 90%;
+  max-width: 1224px;
   @media (width >= 96rem /* 1536px */) {
     width: 80%;
   }

@@ -20,7 +20,7 @@ const Header = () => {
       <Carousel className="relative w-full h-full">
         <div className="absolute w-full z-10 h-full blur-bg flex items-center justify-center">
           <div className="flex w-full flex-col h-full md:py-8 gap-8 max-md:gap-4 items-center">
-            <div className="2xl:w-[80%] md:w-[90%] w-full flex justify-between items-center max-md:hidden">
+            <div className="2xl:w-[80%] md:w-[90%] w-full flex justify-between items-center max-md:hidden max-w-[1224px]">
               <div className="flex justify-between w-full">
                 <div className="flex items-start gap-1">
                   <Icon
@@ -75,9 +75,9 @@ const Header = () => {
               </div>
             </div>
             <TopBarMenu active={Menu.HOME} />
-            <div className="justify-between flex w-full items-center max-md:h-full 2xl:mt-8">
+            <div className="justify-between flex w-full items-center max-md:h-full 2xl:h-[60%]">
               <CarouselPrev />
-              <div className="component-container flex-col gap-12 max-md:gap-6 mt-6 h-full max-md:items-center max-md:justify-center max-md:mt-0">
+              <div className="component-container flex-col gap-12 max-md:gap-6 mt-6 h-full max-md:items-center justify-center max-md:mt-0">
                 <div className="flex flex-col gap-4 max-md:items-center">
                   <p className="text-[52px] max-md:text-center max-md:w-full max-md:text-[32px] transition-all duration-300 ease-in-out text-white font-playfair font-bold">
                     {caroselData[index].title}

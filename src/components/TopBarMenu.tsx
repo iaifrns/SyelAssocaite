@@ -7,7 +7,7 @@ import { useContext } from "react";
 const TopBarMenu = ({ active }: { active: string }) => {
   const {setOpenSidebar} = useContext(GeneralContext)
   return (
-    <div className="bg-primary w-full py-4 px-8 flex justify-between items-center 2xl:w-[80%] md:w-[90%]">
+    <div className="bg-primary w-full py-4 px-8 flex justify-between items-center 2xl:w-[80%] md:w-[90%] max-w-[1224px]">
       <p className="md:text-2xl text-xl font-semibold font-playfair text-white cursor-pointer">
         {generalInfo.company}
       </p>

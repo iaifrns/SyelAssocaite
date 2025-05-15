@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="component-container justify-between py-8 max-md:flex-col gap-8">
         <div className="flex flex-col gap-4 w-full">
           <p className="text-3xl text-white font-bold font-playfair">
-            Syel Advisory
+            {generalInfo.company}
           </p>
           <p className="text-gray-300 font-poppins">
             Nous travaillons au développement de l’activité commerciale
@@ -19,6 +19,7 @@ const Footer = () => {
             <Icon icon="skill-icons:twitter" width="24" height="24" />
             <Icon icon="logos:tiktok-icon" width="24" height="24" />
             <Icon icon="skill-icons:linkedin" width="24" height="24" />
+            <Icon icon="logos:whatsapp-icon" width="24" height="24" />
           </div>
         </div>
         <div className="flex flex-col gap-4 w-full">
