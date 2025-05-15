@@ -1,4 +1,5 @@
 import { images } from "@/constants/images";
+import { enterpriseValue } from "@/data/activities";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Whyus = () => {
@@ -21,29 +22,40 @@ const Whyus = () => {
           />
         </div>
       </div>
-      <div className="flex-1 flex flex-col gap-8">
+      <div className="flex-1 flex flex-col gap-6">
         <div className="flex flex-col gap-4">
           <p className="text-gray-400 font-poppins font-bold max-md:text-sm">
-            What we are expert at
+            Nos principes fondateurs
           </p>
           <p className="text-3xl font-playfair font-bold">
-            Why Clients Choose Us
+            Ce Qui Nous Définit
           </p>
           <div className="w-[60px] h-1 bg-gray-400 rounded-md"></div>
         </div>
-        <p className="text-lg md:text-2xl text-primary">
-          We can provide corporate governance, helping clients manage the
-          responsibilities of running a corporation in financial field.
+        <p className="font-poppins text-primary">
+          Chez SYEL ADVISORY, nos valeurs guident chacune de nos actions. Elles
+          définissent notre manière de travailler, de collaborer et
+          d’accompagner nos clients avec exigence, intégrité et engagement.
         </p>
-        <p className="text-lg md:text-2xl text-gray-500">
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia, there live the blind texts. Separated they
-          live in Bookmarksgrove right at the coast of the Semantics, a large
-          language ocean. A small river named Duden flows.
-        </p>
+        <div className="flex flex-col gap-4">
+          {enterpriseValue.map((item, ind) => (
+            <div className="flex gap-4" key={"enterprise-values-" + ind}>
+              <Icon
+                icon="solar:map-arrow-right-bold-duotone"
+                width="24"
+                height="24"
+                className="text-primary"
+              />
+              <div className="flex flex-col">
+                <p className="font-poppins font-semibold">{item.title}</p>
+                <p className="text-sm">{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
         <button className="transition-all duration-300 ease-out hover:bg-primary rounded-md p-2 cursor-pointer flex gap-4 text-primary hover:text-white font-semibold md:font-bold w-fit">
-            <p>LEARN MORE</p>
-            <Icon icon="si:arrow-right-duotone" width="24" height="24" />
+          <p>VOIR PLUS</p>
+          <Icon icon="si:arrow-right-duotone" width="24" height="24" />
         </button>
       </div>
     </div>

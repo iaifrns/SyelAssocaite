@@ -68,7 +68,7 @@ const Header = () => {
                   <div className="flex gap-4 items-center">
                     <Icon icon="mdi:chat-outline" className="text-lg" />
                     <p className="font-semibold font-poppins text-sm">
-                      FREE CONSULTANT
+                      Consultation gratuite
                     </p>
                   </div>
                 </button>

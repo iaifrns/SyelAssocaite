@@ -1,7 +1,7 @@
 export const Menu = {
-  HOME: "Home",
-  ABOUTUS: "About us",
-  CONTACTUS: "Contact us",
+  HOME: "Accueil",
+  ABOUTUS: "À propos",
+  CONTACTUS: "Contactez-nous",
 } as const;
 
 export type Menu = keyof typeof Menu;
