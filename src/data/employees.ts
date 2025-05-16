@@ -25,7 +25,7 @@ const employees: Employe[] = [
   {
     image: images.person.PERSON5,
     title: "Collaboratrice",
-    name: "DORETTE SANDREINE ABOMO",
+    name: "DORETTE ABOMO",
   },
 ];
 
