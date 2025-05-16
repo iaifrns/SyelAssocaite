@@ -9,12 +9,12 @@ const employees: Employe[] = [
   },
   {
     image: images.person.PERSON2,
-    title: "Associé-Gérant",
+    title: "Associé-Senior",
     name: "DIANE BELLA",
   },
   {
     image: images.person.PERSON3,
-    title: "Associé-Gérant",
+    title: "Associé-Senior",
     name: "KEVIN MPILA",
   },
   {
