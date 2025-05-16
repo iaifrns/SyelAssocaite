@@ -6,12 +6,12 @@ const generalInfo = {
 }
 
 const commonInfo = {
-    positive1Title: "Number #1",
-    positive1Sub: "Law Frim",
+    positive1Title: "Numéro #1",
+    positive1Sub: "Cabinet de Conseil",
     positive2Title: "Have Wom Over",
     positive2Sub: "30+ Law Firm Awards",
-    positive3Title: "Trusted By",
-    positive3Sub: "10,000+ Clients",
+    positive3Title: "Fiabilité Approuvée",
+    positive3Sub: "Par Plus de 1000 Clients",
 }
 
 export {

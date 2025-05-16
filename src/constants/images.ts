@@ -9,7 +9,7 @@ import FINANCE1 from "../assets/home/finance1.jpg";
 import FINANCE2 from "../assets/home/finance2.jpg";
 import FINANCE3 from "../assets/home/finance3.jpg";
 import LOGO from "../assets/syellogo.png";
-import LOGO1 from "../assets/syellogo1.png";
+import LOGO1 from "../assets/syle logo.jpg";
 import PERSON1 from "../assets/collegs/person5.jpg";
 import PERSON2 from "../assets/collegs/person4.png";
 import PERSON3 from "../assets/collegs/person3.png";

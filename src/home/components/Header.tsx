@@ -5,6 +5,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { images } from "@/constants/images";
 import { commonInfo } from "@/constants/informations";
 import { GeneralContext } from "@/context/GeneralProvider";
 import { caroselData } from "@/data/caroselData";
@@ -21,7 +22,8 @@ const Header = () => {
         <div className="absolute w-full z-10 h-full blur-bg flex items-center justify-center">
           <div className="flex w-full flex-col h-full md:py-8 gap-8 max-md:gap-4 items-center">
             <div className="2xl:w-[80%] md:w-[90%] w-full flex justify-between items-center max-md:hidden max-w-[1224px]">
-              <div className="flex justify-between w-full">
+              <div className="flex justify-between w-full items-center">
+                <img src={images.LOGO1} alt={images.LOGO1} className="w-[80px]" />
                 <div className="flex items-start gap-1">
                   <Icon
                     icon="file-icons:pointwise"
@@ -34,20 +36,6 @@ const Header = () => {
                       {commonInfo.positive1Title}
                     </p>
                     <p className="text-white">{commonInfo.positive1Sub}</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-1">
-                  <Icon
-                    icon="lucide:star"
-                    width="24"
-                    height="24"
-                    className="text-white"
-                  />
-                  <div className="flex flex-col">
-                    <p className="text-white font-semibold font-poppins text-xl">
-                      {commonInfo.positive2Title}
-                    </p>
-                    <p className="text-white">{commonInfo.positive2Sub}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-1">
