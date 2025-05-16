@@ -8,16 +8,6 @@ const employees: Employe[] = [
     name: "SYLVAIN ELOGO",
   },
   {
-    image: images.person.PERSON2,
-    title: "Associé-Senior",
-    name: "DIANE BELLA",
-  },
-  {
-    image: images.person.PERSON3,
-    title: "Associé-Senior",
-    name: "KEVIN MPILA",
-  },
-  {
     image: images.person.PERSON4,
     title: "Collaboratrice",
     name: "FORTUNE ENANGA",
