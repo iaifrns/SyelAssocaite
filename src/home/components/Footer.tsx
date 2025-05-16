@@ -27,7 +27,7 @@ const Footer = () => {
             Contact Info
           </p>
           <p className="text-gray-300 font-poppins">
-            Yaoundé (Cameroun) | 70, Easy Offices - Montée Ane Rouge
+            Yaoundé (Cameroun), 70 Montée Ane Rouge, Immeuble Easy Office.
           </p>
           <p className="text-gray-300 font-poppins">{generalInfo.openings}</p>
           <div className="flex flex-col gap-2 text-primary font-semibold font-poppins text-lg">
@@ -41,7 +41,7 @@ const Footer = () => {
           </p>
           <div className="grid grid-cols-2">
             {activities.map((item, ind) => (
-              <p key={ind} className="text-blue-500 font-poppins">
+              <p key={ind} className="text-primary font-poppins font-semibold">
                 {item.text}
               </p>
             ))}

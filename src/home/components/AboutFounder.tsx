@@ -12,16 +12,13 @@ const AboutFounder = () => {
           économiques et la valorisation de la marque. Le cabinet offre un
           service personnalisé de qualité, guidé par des valeurs fortes, avec
           pour priorité l’excellence, l’innovation et l’écoute du client.<br/>
-          <p className="mt-2 font-playfair font-bold">"Le meilleur moyen de prévoir le futur, c’est de le créer"</p>
-        </p>
-        <div>
-          <p className="text-2xl font-tangerine font-bold text-white">
+          <div className="flex gap-6 items-center mt-6 max-md:flex-col">
+          <p className="font-playfair font-bold">"Le meilleur moyen de prévoir le futur, c’est de le créer"</p>
+          <p className="text-sm font-tangerine font-bold text-white">
             Peter DRUCKER
           </p>
-          <p className="text-main-text font-poppins text-sm">
-            CEO, Syel Advisory
-          </p>
-        </div>
+          </div>
+        </p>
       </div>
       <div className="flex-1 relative max-md:hidden">
         <div className="absolute blur-bg h-full w-full rounded-r-lg"></div>
