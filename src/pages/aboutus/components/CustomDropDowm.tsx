@@ -9,12 +9,12 @@ const CustomDropDowm = ({ title, desc, open, onclick }: { title: string; desc: s
           className="text-xl transition-all duration-300 cursor-pointer"
           onClick={onclick}
         />
-        <p className="font-semibold text-2xl font-playfair text-gray-500">
+        <p className="font-semibold md:text-2xl text-lg font-playfair text-gray-500">
           {title}
         </p>
       </div>
       <div className={`transition-all duration-300 ease-out pl-11 ${open ? 'opacity-100 h-fit pb-4' : 'opacity-0 h-0'}`}>
-        <p className="font-poppins text-gray-600">{desc}</p>
+        <p className="font-poppins text-gray-600 max-md:text-xs">{desc}</p>
       </div>
     </div>
   );
