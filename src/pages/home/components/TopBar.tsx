@@ -1,4 +1,5 @@
-import { generalInfo } from "../../constants/informations";
+import React from "react";
+import { generalInfo } from "../../../constants/informations";
 import { Icon } from "@iconify/react";
 
 const TopBar = () => {

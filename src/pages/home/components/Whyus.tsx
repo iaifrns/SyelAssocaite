@@ -1,5 +1,6 @@
-import { images } from "@/constants/images";
-import { enterpriseValue } from "@/data/activities";
+import React from "react";
+import { images } from "../../../constants/images";
+import { enterpriseValue } from "../../../data/activities";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Whyus = () => {

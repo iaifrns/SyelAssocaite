@@ -1,6 +1,7 @@
-import { CarouselSpacing } from "@/components/CarouselSpacing";
-import { generalInfo } from "@/constants/informations";
+import { CarouselSpacing } from "../../../components/CarouselSpacing";
+import { generalInfo } from "../../../constants/informations";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import React from "react";
 
 const PartnersSection = () => {
     return (

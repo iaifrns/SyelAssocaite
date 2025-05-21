@@ -1,5 +1,6 @@
-import { images } from "@/constants/images";
-import { generalInfo } from "@/constants/informations";
+import React from "react";
+import { images } from "../../../constants/images";
+import { generalInfo } from "../../../constants/informations";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 const ContactDetail = () => {

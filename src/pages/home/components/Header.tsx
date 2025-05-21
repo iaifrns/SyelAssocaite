@@ -1,15 +1,16 @@
-import { CarouselNext, CarouselPrev } from "@/components/carouselButton";
-import TopBarMenu from "@/components/TopBarMenu";
+import React from "react";
+import { CarouselNext, CarouselPrev } from "../../../components/carouselButton";
+import TopBarMenu from "../../../components/TopBarMenu";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
-import { images } from "@/constants/images";
-import { commonInfo } from "@/constants/informations";
-import { GeneralContext } from "@/context/GeneralProvider";
-import { caroselData } from "@/data/caroselData";
-import { Menu } from "@/enum/Menu";
+} from "../../../components/ui/carousel";
+import { images } from "../../../constants/images";
+import { commonInfo } from "../../../constants/informations";
+import { GeneralContext } from "../../../context/GeneralProvider";
+import { caroselData } from "../../../data/caroselData";
+import { Menu } from "../../../enum/Menu";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useContext } from "react";
 
