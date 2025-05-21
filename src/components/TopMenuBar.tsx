@@ -3,10 +3,18 @@ import { commonInfo } from "@/constants/informations";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import TopBarMenu from "./TopBarMenu";
 
-const TopMenuBar = ({active, title, sub}:{active:string, title:string, sub:string}) => {
+const TopMenuBar = ({
+  active,
+  title,
+  sub,
+}: {
+  active: string;
+  title: string;
+  sub: string;
+}) => {
   return (
     <div
-      className="w-full border border-black"
+      className="w-full"
       style={{ backgroundImage: `url(${images.lawImg.LAW3})` }}
     >
       <div className="w-full h-full flex flex-col items-center justify-center blur-bg md:p-16">
@@ -52,8 +60,12 @@ const TopMenuBar = ({active, title, sub}:{active:string, title:string, sub:strin
           </div>
           <TopBarMenu active={active} />
           <div className="p-8 flex flex-col w-full items-center">
-            <p className="text-white font-bold font-poppins text-[48px]">{title}</p>
-            <p className="text-xl font-playfair font-semibold text-gray-300">{sub}</p>
+            <p className="text-white font-bold font-poppins md:text-[48px] text-2xl">
+              {title}
+            </p>
+            <p className="md:text-xl text-center font-playfair font-semibold text-gray-300">
+              {sub}
+            </p>
           </div>
         </div>
       </div>
