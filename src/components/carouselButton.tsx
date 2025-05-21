@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useCarousel } from "./ui/carousel";
 import { useContext } from "react";
-import { GeneralContext } from "@/context/GeneralProvider";
+import { GeneralContext } from "../context/GeneralProvider";
 
 export const CarouselNext = () => {
   const { scrollNext, canScrollNext } = useCarousel();

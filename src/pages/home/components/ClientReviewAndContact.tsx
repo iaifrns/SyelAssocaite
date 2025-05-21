@@ -3,7 +3,6 @@ import ClientTestimony from "./ClientTestimony";
 import { Parallax } from "react-scroll-parallax";
 import { useEffect, useState } from "react";
 import CustomInput from "../../../components/CustomInput";
-import React from "react";
 
 const smallDesc = [
   "Le droit est un domaine complexe. L’ignorer peut avoir de lourdes conséquences. Chez SYEL ADVISORY, nous sommes là pour vous conseiller et vous protéger.",

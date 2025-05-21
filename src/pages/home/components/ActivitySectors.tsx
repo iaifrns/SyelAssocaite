@@ -1,5 +1,4 @@
 import CarouselActivities from "../../../components/CarouselActivities";
-import React from "react";
 
 const ActivitySectors = () => {
   return (

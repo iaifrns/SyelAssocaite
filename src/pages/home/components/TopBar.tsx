@@ -1,4 +1,3 @@
-import React from "react";
 import { generalInfo } from "../../../constants/informations";
 import { Icon } from "@iconify/react";
 

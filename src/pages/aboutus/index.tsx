@@ -1,11 +1,67 @@
-import * as React from 'react'
+import { SidebarProvider } from "@/components/ui/sidebar";
+import TopBar from "../home/components/TopBar";
+import TopMenuBar from "@/components/TopMenuBar";
+import { Menu } from "@/enum/Menu";
+import { employees } from "@/data/employees";
+import { useState } from "react";
 
 const AboutUsPage = () => {
-    return (
-        <div>
-            about us page
-        </div>
-    )
-}
+  const [isHovered, setIsHovered] = useState(-1);
 
-export default AboutUsPage
+  return (
+    <SidebarProvider open={true}>
+      <div className="flex flex-col items-center w-full">
+        <div className="component-container">
+          <TopBar />
+        </div>
+        <TopMenuBar
+          active={Menu.ABOUTUS}
+          sub="A greate team"
+          title="Nos Patenaire"
+        />
+        <div className="component-container flex-col items-center mt-12 gap-8">
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-2xl font-semibold font-poppins">
+              Partners at Attorna
+            </p>
+            <div className="w-[1px] bg-primary h-[32px]"></div>
+          </div>
+          <div className="grid grid-cols-3">
+            {employees.map((employe, ind) => (
+              <div className="p-2">
+                <div className="flex flex-col gap-8 h-full w-full bg-gray-100 border border-gray-300">
+                  <div
+                    className="w-full h-[350px] relative overflow-hidden"
+                    onMouseEnter={() => setIsHovered(ind)}
+                    onMouseLeave={() => setIsHovered(-1)}
+                  >
+                    <div
+                      className={`${
+                        isHovered != ind ? "opacity-100" : "opacity-0"
+                      } transition-all duration-500 ease-in-out absolute bg-[rgba(0,0,0,0.6)] h-full w-full z-10`}
+                    ></div>
+                    <img
+                      src={employe.image}
+                      alt={employe.image}
+                      className={`h-full w-full object-cover rounded-t-sm transition-all duration-500`}
+                    />
+                  </div>
+                  <div className="flex flex-col items-center mb-3">
+                    <p className="text-xl font-semibold font-playfair">
+                      {employe.name}
+                    </p>
+                    <p className="text-gray-500 font-poppins text-sm">
+                      {employe.title}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </SidebarProvider>
+  );
+};
+
+export default AboutUsPage;

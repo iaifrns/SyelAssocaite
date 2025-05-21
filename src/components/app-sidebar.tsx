@@ -8,8 +8,8 @@ import {
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem
-} from "@/components/ui/sidebar"
-import { menuList } from "@/constants/menu"
+} from "../components/ui/sidebar"
+import { menuList } from "../constants/menu"
 
 const AppSidebar = () => {
     return (
@@ -20,10 +20,10 @@ const AppSidebar = () => {
             <SidebarGroupContent>
               <SidebarMenu>
                 {menuList.map((item) => (
-                  <SidebarMenuItem key={item}>
+                  <SidebarMenuItem key={item.menu}>
                     <SidebarMenuButton asChild>
-                      <a href={item}>
-                        <span>{item}</span>
+                      <a href={item.link}>
+                        <span>{item.menu}</span>
                       </a>
                     </SidebarMenuButton>
                   </SidebarMenuItem>

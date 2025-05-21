@@ -1,7 +1,6 @@
 import { images } from "../../../constants/images";
 import { enterpriseState } from "../../../data/stats";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import React from "react";
 
 const ClientTestimony = () => {
   return (

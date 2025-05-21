@@ -10,7 +10,6 @@ import ActivitySectors from "./components/ActivitySectors";
 import Whyus from "./components/Whyus";
 import ContactDetail from "./components/ContactDetail";
 import Footer from "./components/Footer";
-import React from "react";
 
 const HomePage = () => {
   const { sizeY } = useCalculateScreenSize();

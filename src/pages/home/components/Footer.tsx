@@ -1,4 +1,3 @@
-import React from "react";
 import { generalInfo } from "../../../constants/informations";
 import { activities } from "../../../data/activities";
 import { Icon } from "@iconify/react/dist/iconify.js";

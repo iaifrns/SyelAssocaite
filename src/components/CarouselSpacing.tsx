@@ -4,8 +4,8 @@ import {
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-} from "@/components/ui/carousel";
-import { employees } from "@/data/employees";
+} from "../components/ui/carousel";
+import { employees } from "../data/employees";
 import { useState } from "react";
 
 export function CarouselSpacing() {

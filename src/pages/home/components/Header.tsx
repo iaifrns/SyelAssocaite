@@ -1,4 +1,3 @@
-import React from "react";
 import { CarouselNext, CarouselPrev } from "../../../components/carouselButton";
 import TopBarMenu from "../../../components/TopBarMenu";
 import {

@@ -1,4 +1,3 @@
-import React from "react";
 import Expertise from "../../../components/Expertise";
 import { expertises } from "../../../data/expertises";
 import { useNavigate } from "react-router-dom";

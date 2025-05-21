@@ -3,7 +3,6 @@ import HomePage from "./pages/home";
 import { Layout } from "./layout/Layout";
 import ErrorBoundary from "./common/ErrorBoundary";
 import GeneralProvider from "./context/GeneralProvider";
-import React from "react";
 import AboutUsPage from "./pages/aboutus";
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
             }
           >
             <Route index element={<HomePage />} />
-            <Route index element={<AboutUsPage />} />
+            <Route index path="/about_us" element={<AboutUsPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

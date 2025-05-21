@@ -1,12 +1,13 @@
-import { menuList } from "@/constants/menu";
+import { menuList } from "../constants/menu";
 import { GeneralContext } from "@/context/GeneralProvider";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useContext } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 export function Layout() {
   const { openSidebar, setOpenSidebar } = useContext(GeneralContext);
+  const navigateTo = useNavigate()
   return (
     <ParallaxProvider>
       <div className="w-full h-full relative">
@@ -38,9 +39,10 @@ export function Layout() {
             {menuList.map((text, ind) => (
               <p
                 className={`transition-all duration-300 font-poppins cursor-pointer p-4 font-semibold text-white`}
-                key={text + ind}
+                key={text.menu + ind}
+                onClick={()=>navigateTo(text.link)}
               >
-                {text}
+                {text.menu}
               </p>
             ))}
           </div>

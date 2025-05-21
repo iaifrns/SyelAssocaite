@@ -4,8 +4,8 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-import { activities } from "@/data/activities";
+} from "../components/ui/carousel";
+import { activities } from "../data/activities";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useState } from "react";
 

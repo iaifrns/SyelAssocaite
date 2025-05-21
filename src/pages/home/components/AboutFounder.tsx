@@ -1,6 +1,5 @@
 import { images } from "../../../constants/images";
 import { generalInfo } from "../../../constants/informations";
-import React from "react";
 
 const AboutFounder = () => {
   return (
