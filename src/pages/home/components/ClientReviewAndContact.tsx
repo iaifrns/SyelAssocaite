@@ -102,7 +102,7 @@ const ClientReviewAndContact = () => {
             name=""
             id=""
             placeholder={"Message"}
-            className="w-full h-[180px] bg-[rgba(230,230,230)] font-poppins p-4 focus:outline-none"
+            className="w-full h-[180px] bg-[rgba(240,240,240)] font-poppins p-4 focus:outline-none"
             value={formData.message}
             onChange={(e) =>
               setFormData({ ...formData, message: e.target.value })

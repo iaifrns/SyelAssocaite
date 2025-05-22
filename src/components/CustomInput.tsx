@@ -14,7 +14,7 @@ const CustomInput = ({
       value={value}
       placeholder={placeholder}
       onChange={onChange}
-      className="p-4 focus:outline-none bg-[rgba(230,230,230)] w-full font-poppins"
+      className="p-4 focus:outline-none bg-[rgba(240,240,240)] w-full font-poppins"
     />
   );
 };

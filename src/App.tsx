@@ -4,6 +4,7 @@ import { Layout } from "./layout/Layout";
 import ErrorBoundary from "./common/ErrorBoundary";
 import GeneralProvider from "./context/GeneralProvider";
 import AboutUsPage from "./pages/aboutus";
+import ContactUsPage from "./pages/contactus";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           >
             <Route index element={<HomePage />} />
             <Route index path="/about_us" element={<AboutUsPage />} />
+            <Route index path="/contact_us" element={<ContactUsPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

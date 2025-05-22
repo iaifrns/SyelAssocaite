@@ -27,7 +27,7 @@ const Footer = () => {
             Contact Info
           </p>
           <p className="text-gray-300 font-poppins">
-            Yaoundé (Cameroun), 70 Montée Ane Rouge, Immeuble Easy Office.
+            {generalInfo.location}
           </p>
           <p className="text-gray-300 font-poppins">{generalInfo.openings}</p>
           <div className="flex flex-col gap-2 text-primary font-semibold font-poppins text-lg">
