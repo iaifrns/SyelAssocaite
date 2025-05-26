@@ -6,6 +6,7 @@ import { generalInfo } from "@/constants/informations";
 import Footer from "../home/components/Footer";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import ContactForm from "./components/ContactForm";
+import MapComponent from "@/components/MapComponent";
 
 const ContactDetail = ({
   icon,
@@ -80,6 +81,7 @@ const ContactUsPage = () => {
           </div>
         </div>
         <ContactForm />
+        <MapComponent />
         <Footer />
       </div>
     </SidebarProvider>
