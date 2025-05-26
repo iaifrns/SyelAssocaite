@@ -3,7 +3,7 @@ const generalInfo = {
   email: "info@syel-advisory.com",
   openings: "Du lundi au vendredi : 8h-17h",
   company: "SYEL Advisory",
-  location: "Yaoundé (Cameroun), 70 Montée Ane Rouge, Immeuble Easy Office.",
+  location: "Yaoundé (Cameroun) | 70, Montée Ane Rouge, Immeuble Easy Office.",
 };
 
 const commonInfo = {
