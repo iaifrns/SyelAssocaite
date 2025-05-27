@@ -8,6 +8,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import TopBar from "../home/components/TopBar";
 import type { DetailExpertise } from "@/types/expertise";
 import { activities } from "@/data/activities";
+import Footer from "../home/components/Footer";
 
 const ExpertisePage = () => {
   const { expertise } = useParams();
@@ -38,13 +39,13 @@ const ExpertisePage = () => {
           sub={expertiseITem.sub}
           title={expertiseITem.title}
         />
-        <div className="component-container gap-8 py-12 relative">
-          <div className="w-3/4 flex flex-col gap-8">
+        <div className="component-container gap-8 py-12 relative max-md:flex-col">
+          <div className="w-full md:w-3/4 flex flex-col gap-8">
             <p className="font-poppins">{expertiseITem.desc}</p>
             <img
               src={expertiseITem.img}
               alt={expertiseITem.img}
-              className="w-full h-[450px] object-cover"
+              className="w-full h-[450px] max-md:h-auto object-cover"
             />
             <div className="flex flex-col gap-4">
               {expertiseITem.descList.map((item, ind) => (
@@ -79,7 +80,7 @@ const ExpertisePage = () => {
               </p>
             </div>
           </div>
-          <div className="w-3/12 flex flex-col gap-8 h-fit static top-0">
+          <div className="w-full md:w-3/12 flex flex-col gap-8 h-fit static top-0">
             <div className="flex flex-col gap-3">
               <p className="font-playfair font-bold text-xl">Autre Expertise</p>
               {expertiseList.map((item, ind) => (
@@ -120,6 +121,7 @@ const ExpertisePage = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </SidebarProvider>
   );
