@@ -1,3 +1,4 @@
+import { generalInfo } from "@/constants/informations";
 import { employees } from "@/data/employees";
 import { useState } from "react";
 
@@ -7,7 +8,7 @@ const PartnersSection = () => {
         <div className="component-container flex-col items-center mt-12 gap-8">
           <div className="flex flex-col items-center gap-4">
             <p className="md:text-2xl text-xl font-semibold font-poppins">
-              Partners at Attorna
+              Partnaire chez {generalInfo.company}
             </p>
             <div className="w-[1px] bg-primary md:h-[32px] h-[24px]"></div>
           </div>

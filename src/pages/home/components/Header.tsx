@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { CarouselNext, CarouselPrev } from "../../../components/carouselButton";
 import TopBarMenu from "../../../components/TopBarMenu";
 import {
@@ -15,6 +16,7 @@ import { useContext } from "react";
 
 const Header = () => {
   const { index } = useContext(GeneralContext);
+  const navigate = useNavigate();
 
   return (
     <div className="w-full md:h-[80%] h-full relative overflow-hidden">
@@ -23,7 +25,11 @@ const Header = () => {
           <div className="flex w-full flex-col h-full md:py-8 gap-8 max-md:gap-4 items-center">
             <div className="2xl:w-[80%] md:w-[90%] w-full flex justify-between items-center max-md:hidden max-w-[1224px]">
               <div className="flex justify-between w-full items-center">
-                <img src={images.LOGO1} alt={images.LOGO1} className="w-[80px]" />
+                <img
+                  src={images.LOGO1}
+                  alt={images.LOGO1}
+                  className="w-[80px]"
+                />
                 <div className="flex items-start gap-1">
                   <Icon
                     icon="file-icons:pointwise"
@@ -75,7 +81,10 @@ const Header = () => {
                 <p className="font-poppins text-white max-md:w-[80%] max-md:text-sm max-md:text-center w-[60%]">
                   {caroselData[index].desc}
                 </p>
-                <button className="p-4 bg-white text-primary flex gap-2 w-fit rounded-md items-center">
+                <button
+                  className="p-4 bg-white text-primary flex gap-2 w-fit rounded-md items-center cursor-pointer"
+                  onClick={() => navigate(caroselData[index].link)}
+                >
                   <p className="font-poppins text-sm font-bold max-md:text-xs">
                     CONTACT NOW
                   </p>

@@ -9,6 +9,8 @@ import TopBar from "../home/components/TopBar";
 import type { DetailExpertise } from "@/types/expertise";
 import { activities } from "@/data/activities";
 import Footer from "../home/components/Footer";
+import NewComponent from "./components/NewComponent";
+import { news } from "@/data/news";
 
 const ExpertisePage = () => {
   const { expertise } = useParams();
@@ -79,8 +81,41 @@ const ExpertisePage = () => {
                 respectant les standards internationaux de qualité.
               </p>
             </div>
+            <div className="flex flex-col gap-4">
+              <p className="text-xl font-bold font-playfair">
+                Contacter Nous Maintenant
+              </p>
+              <div className="flex flex-col gap-2">
+                <div className="w-full flex gap-4 max-md:flex-col">
+                  <input
+                    type="text"
+                    className="p-3 focus:outline-none border border-gray-400 rounded-sm flex-1"
+                    placeholder="Nom"
+                  />
+                  <input
+                    type="text"
+                    className="p-3 focus:outline-none border border-gray-400 rounded-sm flex-1"
+                    placeholder="Email"
+                  />
+                  <input
+                    type="text"
+                    className="p-3 focus:outline-none border border-gray-400 rounded-sm flex-1"
+                    placeholder="Numero"
+                  />
+                </div>
+                <textarea
+                  className="p-3 focus:outline-none border border-gray-400 rounded-sm flex-1"
+                  name=""
+                  placeholder="Message"
+                  id=""
+                ></textarea>
+                <button className="px-4 py-3 bg-primary rounded-md text-white font-semibold w-[200px] font-poppins">
+                  Envoyer
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="w-full md:w-3/12 flex flex-col gap-8 h-fit static top-0">
+          <div className="w-full md:w-3/12 flex flex-col gap-8 h-fit sticky top-0">
             <div className="flex flex-col gap-3">
               <p className="font-playfair font-bold text-xl">Autre Expertise</p>
               {expertiseList.map((item, ind) => (
@@ -116,6 +151,14 @@ const ExpertisePage = () => {
                   >
                     {item.text}
                   </p>
+                ))}
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <p className="text-xl font-playfair font-bold">Our Latest News</p>
+              <div className="flex flex-col gap-4">
+                {news.filter(it=>it.domain == expertise).map((nw, ind) => (
+                  <NewComponent title={nw.title} image={nw.img} desc={nw.desc} key={nw.title + ind} />
                 ))}
               </div>
             </div>
