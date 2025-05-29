@@ -1,13 +1,43 @@
+import { images } from "@/constants/images";
 import { menuList } from "../constants/menu";
 import { GeneralContext } from "@/context/GeneralProvider";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-import { ParallaxProvider } from 'react-scroll-parallax';
+import { ParallaxProvider } from "react-scroll-parallax";
+import { preLoadeImg } from "@/utils/imgPreLoader";
 
 export function Layout() {
   const { openSidebar, setOpenSidebar } = useContext(GeneralContext);
-  const navigateTo = useNavigate()
+  const navigateTo = useNavigate();
+  const [loading, setLoading] = useState(false)
+
+  const imgs = [
+    ...Object.keys(images.finance),
+    ...Object.keys(images.lawImg),
+    ...Object.keys(images.news),
+    ...Object.keys(images.person),
+    ...Object.keys(images.transport),
+    images.LOGO,
+    images.LOGO1,
+  ];
+
+  useEffect(()=>{
+setLoading(true)
+preLoadeImg(imgs).then(()=>{
+  setLoading(false)
+})
+  },[])
+
+  if(loading){
+    return (
+      <div className="flex w-full h-screen items-center justify-center flex-col gap-3">
+        <Icon icon="ri:loader-4-fill" width="32" height="32" className="rotate-180 transition-all duration-300 text-primary" />
+        <p className="text-primary font-poppins">Chargement ...</p>
+      </div>
+    )
+  }
+
   return (
     <ParallaxProvider>
       <div className="w-full h-full relative">
@@ -40,7 +70,7 @@ export function Layout() {
               <p
                 className={`transition-all duration-300 font-poppins cursor-pointer p-4 font-semibold text-white`}
                 key={text.menu + ind}
-                onClick={()=>navigateTo(text.link)}
+                onClick={() => navigateTo(text.link)}
               >
                 {text.menu}
               </p>
