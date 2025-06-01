@@ -1,4 +1,5 @@
 export interface ActivityType {
     icon: string,
-    text: string
+    text: string,
+    description: string
 }

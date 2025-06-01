@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import {
   Carousel,
   CarouselContent,
@@ -7,10 +8,13 @@ import {
 } from "../components/ui/carousel";
 import { activities } from "../data/activities";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { GeneralContext } from "@/context/GeneralProvider";
 
 const CarouselActivities = () => {
   const [isHovered, setIsHovered] = useState(-1);
+  const navigateTo = useNavigate()
+  const {setActivityIndex} = useContext(GeneralContext)
   return (
     <Carousel className="w-full">
       <CarouselContent className="-ml-1">
@@ -23,6 +27,10 @@ const CarouselActivities = () => {
               className="px-4 py-8 hover:bg-primary flex flex-col justify-center items-center gap-4 w-[90%] shadow-2xl rounded-md border border-gray-300 hover:scale-110 transition-all duration-300 ease-out"
               onMouseEnter={() => setIsHovered(index)}
               onMouseLeave={() => setIsHovered(-1)}
+              onClick={()=>{
+                setActivityIndex(index)
+                navigateTo("/activities")
+              }}
             >
               <div
                 className={`p-4 rounded-full transition-colors duration-300 ${

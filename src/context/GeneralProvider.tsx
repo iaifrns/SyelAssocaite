@@ -5,6 +5,8 @@ interface ContextType {
   setIndex: (v: number) => void;
   openSidebar: boolean;
   setOpenSidebar: (v: boolean) => void;
+  activityIndex: number;
+  setActivityIndex: (v: number) => void;
 }
 
 const initialiser: ContextType = {
@@ -12,13 +14,20 @@ const initialiser: ContextType = {
   setIndex: (v: number) => v,
   openSidebar: false,
   setOpenSidebar: (v) => v,
+  activityIndex: 0,
+  setActivityIndex: (v: number) => v,
 };
 
 export const GeneralContext = createContext(initialiser);
 
 const GeneralProvider = ({ children }: { children: ReactNode }) => {
   const [index, setIndex] = useState(0);
+  const [activityIndex, setActivityIndex] = useState(0);
   const [openSidebar, setOpenSidebar] = useState(false);
+
+  const handleActivityIndex = (v: number) => {
+    setActivityIndex(v);
+  };
 
   const handleIndex = (v: number) => {
     setIndex(v);
@@ -35,6 +44,8 @@ const GeneralProvider = ({ children }: { children: ReactNode }) => {
         setIndex: handleIndex,
         openSidebar,
         setOpenSidebar: handleOpenSidebar,
+        activityIndex,
+        setActivityIndex: handleActivityIndex
       }}
     >
       {children}
