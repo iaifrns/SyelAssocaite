@@ -27,9 +27,12 @@ const ActivitiesPage = () => {
           title="Nos Patenaire"
         />
         <div className="component-container py-12 flex-col gap-12">
-          <p className="text-center text-3xl font-playfair font-bold">
+            <div className="flex flex-col justify-center items-center">
+                <p className="text-gray-400 font-poppins font-bold md:text-xl">Nos Principaux</p>
+            <p className="text-center text-3xl font-playfair font-bold">
             Secteurs D’Activité
           </p>
+            </div>
           <div className="flex flex-col gap-10">
             {actList.map((activity, ind) => (
               <>
