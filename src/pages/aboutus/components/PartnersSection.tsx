@@ -21,15 +21,10 @@ const PartnersSection = () => {
                     onMouseEnter={() => setIsHovered(ind)}
                     onMouseLeave={() => setIsHovered(-1)}
                   >
-                    <div
-                      className={`${
-                        isHovered != ind ? "opacity-100" : "opacity-0"
-                      } transition-all duration-500 ease-in-out absolute blur-bg h-full w-full z-10`}
-                    ></div>
                     <img
                       src={employe.image}
                       alt={employe.image}
-                      className={`h-full w-full object-cover rounded-t-sm transition-all duration-500`}
+                      className={`h-full w-full object-cover rounded-t-sm transition-all duration-500 ${isHovered == ind && 'scale-110'}`}
                     />
                   </div>
                   <div className="flex flex-col items-center mb-3">

@@ -53,10 +53,6 @@ const Whyus = () => {
             </div>
           ))}
         </div>
-        <button className="transition-all duration-300 ease-out hover:bg-primary rounded-md p-2 cursor-pointer flex gap-4 text-primary hover:text-white font-semibold md:font-bold w-fit">
-          <p>VOIR PLUS</p>
-          <Icon icon="si:arrow-right-duotone" width="24" height="24" />
-        </button>
       </div>
     </div>
   );
