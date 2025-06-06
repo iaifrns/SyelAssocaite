@@ -19,7 +19,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full md:h-[80%] h-full relative overflow-hidden">
+    <div className="w-full  md:h-[80%] h-full relative overflow-hidden">
       <Carousel className="relative w-full h-full">
         <div className="absolute w-full z-10 h-full blur-bg flex items-center justify-center">
           <div className="flex w-full flex-col h-full md:py-8 gap-8 max-md:gap-4 items-center">
@@ -86,7 +86,7 @@ const Header = () => {
                   onClick={() => navigate(caroselData[index].link)}
                 >
                   <p className="font-poppins text-sm font-bold max-md:text-xs">
-                    CONTACT NOW
+                    CONTACTEZ NOUS
                   </p>
                   <Icon icon="majesticons:arrow-right" width="20" height="20" />
                 </button>

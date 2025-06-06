@@ -1,18 +1,16 @@
 import { SidebarProvider } from "../../components/ui/sidebar";
-import Header from "./components/Header";
-import TopBar from "./components/TopBar";
 import AboutFounder from "./components/AboutFounder";
-import { useCalculateScreenSize } from "../../hooks/useCalculateScreenSize";
-import Expertise from "./components/Expertise";
-import PartnersSection from "./components/PartnersSection";
-import ClientReviewAndContact from "./components/ClientReviewAndContact";
 import ActivitySectors from "./components/ActivitySectors";
-import Whyus from "./components/Whyus";
+import ClientReviewAndContact from "./components/ClientReviewAndContact";
 import ContactDetail from "./components/ContactDetail";
+import Expertise from "./components/Expertise";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
+import PartnersSection from "./components/PartnersSection";
+import TopBar from "./components/TopBar";
+import Whyus from "./components/Whyus";
 
 const HomePage = () => {
-  const { sizeY } = useCalculateScreenSize();
   return (
     <SidebarProvider open={true}>
       <div className="flex flex-col items-center w-full">
@@ -20,8 +18,7 @@ const HomePage = () => {
           <TopBar />
         </div>
         <div
-          className="relative flex items-center flex-col"
-          style={{ height: sizeY ? `${sizeY}px` : '100%' }}
+          className="relative flex items-center flex-col md:h-[980px] h-fit"
         >
           <Header />
           <AboutFounder />

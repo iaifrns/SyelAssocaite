@@ -73,6 +73,12 @@ const activities: ActivityType[] = [
     description:
       "Notre accompagnement couvre la protection des œuvres (droits d’auteur, cession, dépôt), la structuration des projets culturels (financements, partenariats, mécénat), la gestion contractuelle des artistes et prestataires, ainsi que l’organisation logistique d’événements (expositions, tournées, festivals). SYEL ADVISORY favorise la professionnalisation des acteurs culturels tout en respectant la singularité de leur activité.",
   },
+  {
+    icon: "game-icons:mining",
+    text: "Mines",
+    description:
+      "Notre accompagnement couvre la protection des œuvres (droits d’auteur, cession, dépôt), la structuration des projets culturels (financements, partenariats, mécénat), la gestion contractuelle des artistes et prestataires, ainsi que l’organisation logistique d’événements (expositions, tournées, festivals). SYEL ADVISORY favorise la professionnalisation des acteurs culturels tout en respectant la singularité de leur activité.",
+  },
 ];
 
 const enterpriseValue: { title: string; desc: string; detailDesc: string }[] = [
