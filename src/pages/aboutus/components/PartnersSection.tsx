@@ -1,5 +1,5 @@
 import { generalInfo } from "@/constants/informations";
-import { employees } from "@/data/employees";
+import { allEmployees } from "@/data/employees";
 import { useState } from "react";
 
 const PartnersSection = () => {
@@ -13,7 +13,7 @@ const PartnersSection = () => {
             <div className="w-[1px] bg-primary md:h-[32px] h-[24px]"></div>
           </div>
           <div className="grid md:grid-cols-3">
-            {employees.map((employe, ind) => (
+            {allEmployees.map((employe, ind) => (
               <div className="p-2">
                 <div className="flex flex-col gap-8 h-full w-full bg-gray-100 border border-gray-300">
                   <div

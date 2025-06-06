@@ -10,11 +10,17 @@ import FINANCE2 from "../assets/home/finance2.jpg";
 import FINANCE3 from "../assets/home/finance3.jpg";
 import LOGO from "../assets/syellogo.png";
 import LOGO1 from "../assets/syle logo.jpg";
-import PERSON1 from "../assets/collegs/person5.jpg";
-import PERSON2 from "../assets/collegs/person4.png";
+import PERSON1 from "../assets/collegs/1.png";
+import PERSON2 from "../assets/collegs/24.png";
 import PERSON3 from "../assets/collegs/person3.png";
-import PERSON4 from "../assets/collegs/person2.png";
-import PERSON5 from "../assets/collegs/person1.png";
+import PERSON4 from "../assets/collegs/24.png";
+import PERSON5 from "../assets/collegs/23.png";
+import PERSON6 from "../assets/collegs/22.png";
+import PERSON7 from "../assets/collegs/4.png";
+import PERSON8 from "../assets/collegs/17.png";
+import PERSON9 from "../assets/collegs/14.png";
+import PERSON10 from "../assets/collegs/10.png";
+import PERSON11 from "../assets/collegs/19.png";
 import NEWL1 from '../assets/news/newL1.jpg';
 import NEWL2 from '../assets/news/newL2.jpg';
 import NEWF1 from '../assets/news/newF1.jpg';
@@ -47,6 +53,12 @@ const person = {
   PERSON3,
   PERSON4,
   PERSON5,
+  PERSON6,
+  PERSON7,
+  PERSON8,
+  PERSON9,
+  PERSON10,
+  PERSON11,
 }
 
 const news = {
