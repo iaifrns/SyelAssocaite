@@ -9,12 +9,12 @@ const employees: Employe[] = [
   },
   {
     image: images.person.PERSON4,
-    title: "Collaboratrice",
+    title: "Assistante Projets - Marketing.",
     name: "FORTUNE ENANGA",
   },
   {
     image: images.person.PERSON5,
-    title: "Collaboratrice",
+    title: "Assistante projets-RH",
     name: "DORETTE ABOMO",
   },
 ];
@@ -27,17 +27,17 @@ const allEmployees: Employe[] = [
   },
   {
     image: images.person.PERSON4,
-    title: "Collaboratrice",
+    title: "Assistante Projets - Marketing",
     name: "FORTUNE ENANGA",
   },
   {
     image: images.person.PERSON5,
-    title: "Collaboratrice",
+    title: "Assistante projets-RH",
     name: "DORETTE ABOMO",
   },
   {
     image: images.person.PERSON6,
-    title: "Collaboratrice",
+    title: "Collaboratrure",
     name: "SIMO RYAN",
   },
   {
@@ -47,12 +47,12 @@ const allEmployees: Employe[] = [
   },
   {
     image: images.person.PERSON8,
-    title: "Collaboratrice",
+    title: "Collaboratrure",
     name: "SHU SUCCESS",
   },
   {
     image: images.person.PERSON9,
-    title: "Collaboratrice",
+    title: "Collaboratrure",
     name: "ELOUNDOU JASON",
   },
   {
