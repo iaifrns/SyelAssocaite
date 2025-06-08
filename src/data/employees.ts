@@ -37,7 +37,7 @@ const allEmployees: Employe[] = [
   },
   {
     image: images.person.PERSON6,
-    title: "Collaboratrure",
+    title: "Collaborateur",
     name: "SIMO RYAN",
   },
   {
@@ -47,12 +47,12 @@ const allEmployees: Employe[] = [
   },
   {
     image: images.person.PERSON8,
-    title: "Collaboratrure",
+    title: "Collaborateur",
     name: "SHU SUCCESS",
   },
   {
     image: images.person.PERSON9,
-    title: "Collaboratrure",
+    title: "Collaborateur",
     name: "ELOUNDOU JASON",
   },
   {
