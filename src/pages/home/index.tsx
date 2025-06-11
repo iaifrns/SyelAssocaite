@@ -18,7 +18,7 @@ const HomePage = () => {
           <TopBar />
         </div>
         <div
-          className="relative flex items-center flex-col md:h-[980px] h-fit"
+          className="relative flex items-center flex-col md:h-[980px] 2xl:h-[1050px] h-fit"
         >
           <Header />
           <AboutFounder />
