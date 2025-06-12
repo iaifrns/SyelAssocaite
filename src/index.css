@@ -11,7 +11,7 @@
   --font-playfair: "Playfair", serif;
   --font-tangerine: "Tangerine", cursive;
   --color-subtext: #717171;
-  --color-primary: #088dd1;
+  --color-primary: #063e88;
   --color-secondary: #4c51a0;
   --color-main-text: #bea68f;
 }
@@ -104,7 +104,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: rgb(6, 62, 136);
+  --primary: #063e88;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: #4c51a0;
   --secondary-foreground: oklch(0.205 0 0);

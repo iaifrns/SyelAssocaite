@@ -19,7 +19,7 @@ export function CarouselSpacing() {
             <div className="p-2">
               <div className="rounded-sm flex flex-col gap-8 h-full w-full bg-white">
                 <div
-                  className="w-full h-[350px] relative overflow-hidden"
+                  className="w-full h-[380px] relative overflow-hidden"
                   onMouseEnter={() => setIsHovered(index)}
                   onMouseLeave={() => setIsHovered(-1)}
                 >
