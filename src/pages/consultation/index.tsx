@@ -63,24 +63,41 @@ const FreeConsultationPage = () => {
                 </div>
               </div>
             </div>
-            <TopBarMenu active={'/consultation'} />
-            <div className="justify-between flex w-full items-center max-md:h-full 2xl:h-[60%]">
-              <div className="component-container flex-col gap-12 max-md:gap-6 mt-6 h-full max-md:items-center justify-center max-md:mt-0">
-                content //////////
+            <TopBarMenu active={"/consultation"} />
+            <div className="justify-between flex 2xl:w-[80%] md:w-[90%] items-center h-full">
+              <div className="flex w-full flex-col gap-6 max-md:gap-6 mt-6 h-full max-md:items-center justify-center max-md:mt-0">
+                <p className="md:text-[58px] text-2xl font-playfair font-bold text-white">
+                  Commencez par votre adresse mail
+                </p>
+                <p className="md:text-xl font-poppins text-white">
+                  Indiquez votre adresse email pour recevoir votre consultation
+                  gratuite, nos premiers conseils et un suivi personnalisé dans
+                  les plus brefs délais.
+                </p>
+                <div className="flex gap-2 w-full">
+                  <input
+                    type="email"
+                    className="md:p-6 p-4 border-b-2 border-white focus:outline-none text-white font-poppins w-full"
+                    placeholder="Entrez votre adresse mail s’il vous plaît"
+                  />
+                  <button className="w-[200px] h-full flex justify-center items-center border border-white font-poppins text-white hover:bg-primary transition-all duration-300 ease-in-out">
+                    Envoyer
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="h-screen border-0 w-full z-0">
-            <div className="pl-0">
-              <div className="w-full h-screen">
-                <img
-                  src={images.lawImg.LAW1}
-                  alt={images.lawImg.LAW1}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+          <div className="pl-0">
+            <div className="w-full h-screen">
+              <img
+                src={images.lawImg.LAW1}
+                alt={images.lawImg.LAW1}
+                className="w-full h-full object-cover"
+              />
             </div>
+          </div>
         </div>
       </div>
     </div>
