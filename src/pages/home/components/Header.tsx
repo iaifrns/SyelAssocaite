@@ -58,7 +58,10 @@ const Header = () => {
                     <p className="text-white">{commonInfo.positive3Sub}</p>
                   </div>
                 </div>
-                <button className="p-4 bg-white rounded-[4px] text-secondary cursor-pointer">
+                <button
+                  className="p-4 bg-white rounded-[4px] text-secondary cursor-pointer"
+                  onClick={() => navigate("/consultation")}
+                >
                   <div className="flex gap-4 items-center">
                     <Icon icon="mdi:chat-outline" className="text-lg" />
                     <p className="font-semibold font-poppins text-sm">
